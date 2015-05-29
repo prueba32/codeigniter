@@ -11,7 +11,7 @@
        
     </div>
 
-    <div id="navbar" class="collapse navbar-collapse">
+    <div id="navbar" class="collapse navbar-collapse"> 
       <?php $activa = $this->uri->segment(2); ?>
       <ul class="nav navbar-nav"> 
            
@@ -30,7 +30,7 @@
            </ul>
         </li>
        
-        <li <?php if ($activa == 'agregarauto'){ echo "class='active'"; } ?> class = "dropdown">
+        <li <?php if ($activa == 'agregaraut0'){ echo "class='active'"; } ?> class = "dropdown">
           <a href= "#" class="dropdown-toggle" data-toggle = "dropdown"> <span class="glyphicon glyphicon-inbox"></span>&nbsp; Automoviles<b class = "caret"></b></a>
           <ul class="dropdown-menu">
           <li><a href = "<?=base_url()?>index.php/main/agregarauto">Agregar</a></li>
@@ -39,15 +39,25 @@
            </ul>
         </li>
 
-         <li <?php if ($activa == 'agregarauto'){ echo "class='active'"; } ?> class = "dropdown">
+         <li <?php if ($activa == 'agregaralquiler'){ echo "class='active'"; } ?> class = "dropdown">
           <a href= "#" class="dropdown-toggle" data-toggle = "dropdown"> <span class="glyphicon glyphicon-book"></span>&nbsp; Gestion de arriendo<b class = "caret"></b></a>
           <ul class="dropdown-menu">
-          <li><a href = "<?=base_url()?>index.php/main/agregarauto">Agregar</a></li>
-          <li><a href = "<?=base_url()?>index.php/main/buscarauto">Buscar</a></li>
-          <li><a href = "<?=base_url()?>index.php/main/verauto">Ver todo</a></li>
+          <li><a href = "<?=base_url()?>index.php/main/buscargestionalquiler">Alquilar automovil</a></li> 
+          <li><a href = "<?=base_url()?>index.php/main/buscarauto">Verificar arriendo</a></li>
+          <li><a href = "<?=base_url()?>index.php/main/verauto">Devolucion arriendo</a></li>
+          <li><a href = "<?=base_url()?>index.php/main/abrirvista">Generar alerta</a></li> 
            </ul>
         </li>
         
+          <li <?php if ($activa == 'opciones'){ echo "class='active'"; } ?> class = "dropdown">
+          <a href= "#" class="dropdown-toggle" data-toggle = "dropdown"> <span class="glyphicon glyphicon-cog"></span>&nbsp; Opciones<b class = "caret"></b></a>
+          <ul class="dropdown-menu">
+          <li><a href = "<?=base_url()?>index.php/main/backup">Back up base datos</a></li> 
+       <!--   <li><a href = "<?=base_url()?>index.php/main/buscarauto">Verificar arriendo</a></li>
+          <li><a href = "<?=base_url()?>index.php/main/verauto">Devolucion arriendo</a></li>
+          <li><a href = "<?=base_url()?>index.php/main/abrirvista">Generar alerta</a></li>  -->
+           </ul>
+        </li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -58,6 +68,6 @@
           </a>
         </li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>

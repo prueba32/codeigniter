@@ -1,7 +1,6 @@
-	<!-- Navbar -->
+	
 	<?=$this->load->view('headers/menu');?>
-	<!-- End navbar -->
-
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">  

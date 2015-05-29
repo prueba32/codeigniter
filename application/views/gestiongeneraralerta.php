@@ -1,4 +1,4 @@
- 	<?=$this->load->view('headers/menu');?>
+<?=$this->load->view('headers/menu');?>
 
 	<div class="clearfix">&nbsp;</div>
 	<div class="clearfix">&nbsp;</div>
@@ -53,11 +53,11 @@
 								echo "<td>".$row->categoria."</td>";
 								echo "<td>".$row->estado."</td>";
 								echo "<td>";
-									echo "<a href='".base_url()."main/editarauto/".$row->id."' class='label label-success'>";
-										echo "<span class='glyphicon glyphicon-pencil'></a></span>";
+								//	echo "<a href='".base_url()."main/editarauto/".$row->id."' class='label label-success'>";
+									//	echo "<span class='glyphicon glyphicon-pencil'></a></span>";
 								
-									echo "<a href='".base_url()."index.php/main/eliminarauto/".$row->id."' class='label label-danger'>";
-										echo "<span class='glyphicon glyphicon-minus'></a></span>";
+									//echo "<a href='".base_url()."index.php/main/eliminarauto/".$row->id."' class='label label-danger'>";
+									//	echo "<span class='glyphicon glyphicon-minus'></a></span>";
 
 
 								echo "</tr>";

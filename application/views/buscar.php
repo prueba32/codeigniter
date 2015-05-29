@@ -20,14 +20,22 @@
 				<thead>
 					<tr>
 						<form id="form" method="GET" action="<?=base_url()?>index.php/main/buscar">
-							<input type="text" id="query" name="query" />
+							<input type="text" id="query" name="query" /> 
 							<button type="submit" class="btn btn-ttc" id="buscar" value="Buscar">Buscar</button> 
 						</form>
 						<div class="clearfix">&nbsp;</div>
 					</tr>
 					<tr>
-						<th>Nombre</th>
-						<th>Ciudad</th>
+						<th>Nombres</th>
+						<th>Apellidos</th>
+						<th>Rut</th> 
+						<th>Fechanacimiento</th>
+						<th>Nacionalidad</th>
+						<th>Direccion</th>
+						<th>Empresa</th>
+						<th>Nº Tarjetabancaria</th>
+						<th>Nº Telefono</th>
+						<th>Estado</th>
 						<th>Acciones</th>
 					</tr>	
 				</thead>
@@ -37,10 +45,17 @@
 						foreach ($result->result() as $row){
 							echo "<tr>";
 								echo "<td>".$row->nombre."</td>";
-								echo "<td>".$row->ciudad."</td>";
+								echo "<td>".$row->apellidos."</td>";
+								echo "<td>".$row->rut."</td>";
+								echo "<td>".$row->fechanacimiento."</td>";
+								echo "<td>".$row->nacionalidad."</td>";
+								echo "<td>".$row->direccion."</td>";
+								echo "<td>".$row->empresa."</td>";
+								echo "<td>".$row->tarjetabancaria."</td>";
+								echo "<td>".$row->telefono."</td>";
+								echo "<td>".$row->estado."</td>"; 
 								echo "<td>";
-								//	echo "<a href='' class='label label-success'><span class='glyphicon glyphicon-pencil'></a></span>";
-								//	echo "&nbsp;&nbsp;";
+								
                                echo "<a href='".base_url()."main/editar/".$row->id."' class='label label-success'>";
 										echo "<span class='glyphicon glyphicon-pencil'></a></span>";
 
